@@ -18,4 +18,4 @@ install.packages("parcor")
 
 ## References
 
-The inspiration, theory, and code for the following project comes from the highly active (Psychosystems)[http://psychosystems.org/] group. 
+The inspiration, theory, and code for the following project comes from the highly active [Psychosystems](http://psychosystems.org/) group. 
