@@ -1,7 +1,6 @@
 *Simulated HDS dataset
 
 ```
-
 ##########Create Correlation matrix############
 
 ###Load lavaan for low2cor function####
