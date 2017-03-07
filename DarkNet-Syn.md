@@ -28,6 +28,18 @@ vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esiz
 
 #### Step 4. Plot Adaptive LASSO network - preferred when modeling multiple associations (figure 2c).
 
-`install.packages("parcor")' #Package for regularized estimation of partial correlation matrices
+`install.packages("parcor")` #Package for regularized estimation of partial correlation matrices
 `library(parcor)`
 
+Estimate the adaptive lasso network
+
+```Rouge
+set.seed(100)
+adls <- adalasso.net(HDS.Sim) 
+network <- as.matrix(forceSymmetric(adls$pcor.adalasso))
+colnames(network) <- rownames(network) <- colnames(HDS.Sim)
+```
+
+
+netqg <- qgraph(network, layout = "spring", labels = colnames(Data), groups=groups)
+```
