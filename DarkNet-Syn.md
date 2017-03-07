@@ -55,7 +55,7 @@ qgraph(netCor, layout = L)
 qgraph(netPcor, layout = L)
 ```
 
-### Step 5. Extracting, describing, and testing differences in partial correlation table for LASSO Network (Table 2).
+### Step 5. Extracting, describing, and testing differences in LASSO partial correlations (Table 2).
 ------
 
 Printing partial correlation table
