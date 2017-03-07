@@ -45,12 +45,25 @@ colnames(network) <- rownames(network) <- colnames(HDS.Sim)
 
 Plot the adaptive lasso network
 ```Rouge
-netqg <- qgraph(network, layout = "spring", labels = colnames(HDS.Sim), groups=groups, vsize=4, Title = "C. Adaptive LASSO Network", legend = F, cut = .10, esize = 10)
+netal <- qgraph(network, layout = "spring", labels = colnames(HDS.Sim), groups=groups, vsize=4, Title = "C. Adaptive LASSO Network", legend = F, cut = .10, esize = 10)
 ```
 
 Create a uniform layout based upon the adapative lasso network (see Figure 2)
 ```Rouge
-L <- netqg$layout
+L <- netal$layout
 qgraph(netCor, layout = L)
 qgraph(netPcor, layout = L)
 ```
+
+### Step 5. Extracting, describing, and testing differences in partial correlation table for LASSO Network (Table 2).
+------
+
+Printing partial correlation table
+```Rouge
+ew <- round(network,2)
+ew[upper.tri(ew)] <- ""
+ew <- as.data.frame(ew)
+```
+
+### Step 6. Calculating and visualizing global and local network properties (Figures 3-4).
+------
