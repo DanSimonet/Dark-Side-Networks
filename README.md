@@ -1,5 +1,5 @@
 ## Dark-Side-Networks
-Code and simulated dataset to reproduce analyses for 2017 SIOP Poster on Dark Triad as a causal network
+Code and simulated dataset to reproduce analyses for 2017 SIOP Poster on Dark Triad as a causal network.
 
 ## Description
 This repository includes instructions, R syntax, and simulated data for the 2017 SIOP poster: "Dark personality as a causal system: A network approach." 
@@ -8,11 +8,12 @@ This repository includes instructions, R syntax, and simulated data for the 2017
 
 - R > 3.0 (possibly earlier versions will work)
 
-The following packages should install the required R packages for simulating 
+The following R packages should be installed and loaded to simulate the item-level data and run network analyses. 
 
 ```
+install.packages("bindata")
 install.packages("psych")
-install.packages("qgraph"
+install.packages("qgraph")
 install.packages("parcor")
 ```
 ## Data Description
