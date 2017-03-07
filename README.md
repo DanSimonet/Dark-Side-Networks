@@ -18,7 +18,7 @@ install.packages("parcor")
 ```
 ## Data Description
 
-A simulated dataset of the 42-item subset of the Dark Triad analog of the Hogan Developmental Survey (N = 62,997) is provided in the [SimData](https://github.com/Simmy56/Dark-Side-Networks/blob/readme-mods/SimData.md) folder. The code for simualting the multivariate binary-item dataset (i.e., True/False Items) is provided in the (/) folder. 
+A simulated dataset of the 42-item subset of the Dark Triad analog of the Hogan Developmental Survey (N = 62,997) is provided in the [SimData](SimData.md) folder. The code for simualting the multivariate binary-item dataset (i.e., True/False Items) is provided in the (/) folder. 
 
 ## References
 
