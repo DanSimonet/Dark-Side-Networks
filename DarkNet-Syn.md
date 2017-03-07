@@ -31,9 +31,10 @@ vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esiz
 ### Step 4. Plot Adaptive LASSO network - preferred when modeling multiple associations (figure 2c).
 ------
 `install.packages("parcor")` #Package for regularized estimation of partial correlation matrices
+
 `library(parcor)`
 
-Estimate the adaptive lasso network (NOTE: qgraph also implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).) 
+Estimate the adaptive lasso network (NOTE: qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).) 
 
 ```Rouge
 set.seed(100)
