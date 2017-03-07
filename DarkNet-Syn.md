@@ -3,6 +3,10 @@
 
 `library(qgraph)` #load qgraph
 
-###Step 2. Load simulated HDS data and store as a correlation matrix.
+###Step 2. Load simulated HDS data and store as a correlation matrix (or tetrachoric as items are dichotomous).
 
-HDS.Sim.cor <- cor(HDS.Sim)
+```Rogue
+install.packages("qgraph")
+HDS.Sim.cor <- cor(HDS.Sim) #Pearson
+HDS.Sim.tet <- tetrachoric(HDS.Sim)
+```
