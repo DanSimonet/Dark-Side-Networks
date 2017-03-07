@@ -37,12 +37,15 @@ Estimate the adaptive lasso network
 
 ```Rouge
 set.seed(100)
-adls <- adalasso.net(HDS.Sim) 
+adls <- adalasso.net(HDS.Sim) #compute partial correlation matrix via LASSO technique
 network <- as.matrix(forceSymmetric(adls$pcor.adalasso))
 colnames(network) <- rownames(network) <- colnames(HDS.Sim)
 ```
-netqg <- qgraph(network, layout = "spring", labels = colnames(Data), groups=groups)
 
+Plot the adaptive lasso network
+```Rouge
+netqg <- qgraph(network, layout = "spring", labels = colnames(HDS.Sim), groups=groups, vsize=4, Title = "C. Adaptive LASSO Network", legend = F, cut = .10, esize = 10)
+```
 
 Create a uniform layout based upon the adapative lasso network (see Figure 2)
 ```Rouge
