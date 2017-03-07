@@ -1,6 +1,6 @@
 Simulated HDS dataset
 
-```javascript
+```Ruby
 ##########Create Correlation matrix############
 
 ###Load lavaan for low2cor function####
