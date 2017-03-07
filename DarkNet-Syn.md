@@ -9,7 +9,7 @@
 For illustration purposes, code is illustrated using the *pearson* correlation matrix.
 
 ```Rouge
-`library(psych)` 
+library(psych)
 HDS.Sim.cor <- cor(HDS.Sim) #Pearson
 HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 ```
@@ -33,7 +33,7 @@ vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esiz
 `install.packages("parcor")` #Package for regularized estimation of partial correlation matrices
 `library(parcor)`
 
-Estimate the adaptive lasso network
+Estimate the adaptive lasso network (NOTE: qgraph also implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).) 
 
 ```Rouge
 set.seed(100)
