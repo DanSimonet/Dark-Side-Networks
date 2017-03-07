@@ -15,6 +15,9 @@ install.packages("psych")
 install.packages("qgraph"
 install.packages("parcor")
 ```
+## Data Description
+
+A simulated dataset of the 42-item subset of the Dark Triad analog of the Hogan Developmental Survey is provided in the (/simdata) folder. The code for simualting the multivariate binary-item dataset (i.e., True/False Items) is provided in the (/) folder. 
 
 ## References
 
