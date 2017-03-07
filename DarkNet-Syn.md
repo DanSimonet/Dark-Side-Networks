@@ -19,7 +19,8 @@ HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14))
 
 ##Correlation network##
-netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, vsize=4, title = "A. Correlation Network", legend = F)
+netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, 
+vsize=4, title = "A. Correlation Network", legend = F)
 
 ##Partial correlation network##
 netPcor <- qgraph(HDSDT.tr, layout = "spring", labels = colnames(HDSDT.tr), groups = groups, graph = "concentration", 
