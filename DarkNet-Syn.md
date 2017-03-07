@@ -23,6 +23,6 @@ netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor),
 vsize=4, title = "A. Correlation Network", legend = F)
 
 ##Partial correlation network - Cut edge correlations < .10##
-netPcor <- qgraph(HDSDT.tr, layout = "spring", labels = colnames(HDSDT.tr), groups = groups, graph = "concentration", 
+netPcor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, graph = "concentration", 
 vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esize = 10)
 ```
