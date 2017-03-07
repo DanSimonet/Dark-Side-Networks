@@ -22,7 +22,7 @@ groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianis
 netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, 
 vsize=4, title = "A. Correlation Network", legend = F)
 
-##Partial correlation network##
+##Partial correlation network - Cut edge correlations < .10##
 netPcor <- qgraph(HDSDT.tr, layout = "spring", labels = colnames(HDSDT.tr), groups = groups, graph = "concentration", 
 vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esize = 10)
 ```
