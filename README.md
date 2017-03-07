@@ -2,9 +2,7 @@
 Code and simulated dataset to reproduce analyses for 2017 SIOP Poster on Dark Triad as a causal network.
 
 ## Project and Data Description
-This repository includes instructions, R syntax, and simulated data for the 2017 SIOP poster: "Dark personality as a causal system: A network approach." 
-
-You can access the following aspects of the project
+This repository includes instructions, R syntax, and simulated data for the 2017 SIOP poster: "Dark personality as a causal system: A network approach." The following aspects of the project can be accessed.
 
 - HDS item-level correlations (N = 62,997), descriptive statistics, and code for simulating a multivariate binary-item dataset in the `SimData.Syn` file.
 - Simulated dataset of the 42-item Hogan Development Survey analog of the Dark Triad in `SimData.HDS`
