@@ -5,8 +5,10 @@
 
 #### Step 2. Load simulated HDS data and store as a correlation matrix (or tetrachoric as items are dichotomous).
 
+For illustration purposes, code is illustrated with the *Pearson* correlation matrix.
+
 ```Rouge
 install.packages("qgraph")
 HDS.Sim.cor <- cor(HDS.Sim) #Pearson
-HDS.Sim.tet <- tetrachoric(HDS.Sim)
+HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 ```
