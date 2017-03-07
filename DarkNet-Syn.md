@@ -41,7 +41,12 @@ adls <- adalasso.net(HDS.Sim)
 network <- as.matrix(forceSymmetric(adls$pcor.adalasso))
 colnames(network) <- rownames(network) <- colnames(HDS.Sim)
 ```
-
-
 netqg <- qgraph(network, layout = "spring", labels = colnames(Data), groups=groups)
+
+
+Create a uniform layout based upon the adapative lasso network (see Figure 2)
+```Rouge
+L <- netqg$layout
+qgraph(netCor, layout = L)
+qgraph(netPcor, layout = L)
 ```
