@@ -14,7 +14,7 @@ HDS.Sim.cor <- cor(HDS.Sim) #Pearson
 HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 ```
 
-### Step 3. Plot the correlation and partial correlation networks (figures 2A and 2B).
+### Step 3. Plot correlation and partial correlation networks (figures 2A and 2B).
 ------
 ```Rouge
 groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14))
@@ -43,7 +43,7 @@ network <- as.matrix(forceSymmetric(adls$pcor.adalasso))
 colnames(network) <- rownames(network) <- colnames(HDS.Sim)
 ```
 
-Plot the adaptive lasso network
+Plot adaptive lasso network
 ```Rouge
 netal <- qgraph(network, layout = "spring", labels = colnames(HDS.Sim), groups=groups, vsize=4, Title = "C. Adaptive LASSO Network", legend = F, cut = .10, esize = 10)
 ```
@@ -65,7 +65,7 @@ ew[upper.tri(ew)] <- ""
 ew <- as.data.frame(ew)
 ```
 
-Descriptives and t-test for positive v. negative edges
+Descriptives and t-test for comparing difference in weights between positive v. negative edges
 ```
 ew <- network[upper.tri(network)]
 describe(ew)
@@ -77,3 +77,7 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 
 ### Step 6. Calculating and visualizing global and local network properties (Figures 3-4).
 ------
+
+`smallworldness(network)` #Calculate small-worldness index (Humphries & Gurney, 2008)
+
+`
