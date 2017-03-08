@@ -58,11 +58,21 @@ qgraph(netPcor, layout = L)
 ### Step 5. Extracting, describing, and testing differences in LASSO partial correlations (Table 2).
 ------
 
-Printing partial correlation table
+Creating partial correlation table (Table 2)
 ```Rouge
 ew <- round(network,2)
 ew[upper.tri(ew)] <- ""
 ew <- as.data.frame(ew)
+```
+
+Descriptives and t-test for positive v. negative edges
+```
+ew <- network[upper.tri(network)]
+describe(ew)
+sum(ew != 0)
+sum (ew > 0)
+sum (ew < 0)
+t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 ```
 
 ### Step 6. Calculating and visualizing global and local network properties (Figures 3-4).
