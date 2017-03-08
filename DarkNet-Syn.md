@@ -78,9 +78,9 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 ### Step 6. Calculating and visualizing global and local network properties (Figures 3-4).
 ------
 
-`smallworldness(network)` #Calculate small-worldness index (Humphries & Gurney, 2008) based on 
-                          global transitivity and average shortest path length
+`smallworldness(network)` #Calculate small-worldness index (Humphries & Gurney, 2008) 
                           
-`centrality <- centrality_auto(network)` #Calculate centrality indices (Betweenness, closeness, strength)
-
-`
+`centrality <- centrality_auto(network)` #Calculate and store centrality indices (Betweenness, closeness, strength)
+`centralityPlot(network, theme_bw = FALSE)` #Visualize centrality indices
+`cluster <- clustcoef_auto(network)` #Calculate and store clustering coefficients
+`clusteringPlot(network, theme_bw = FALSE)` #
