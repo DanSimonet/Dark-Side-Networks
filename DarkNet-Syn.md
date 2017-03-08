@@ -81,6 +81,9 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 `smallworldness(network)` #Calculate small-worldness index (Humphries & Gurney, 2008) 
                           
 `centrality <- centrality_auto(network)` #Calculate and store centrality indices (Betweenness, closeness, strength)
+
 `centralityPlot(network, theme_bw = FALSE)` #Visualize centrality indices
+
 `cluster <- clustcoef_auto(network)` #Calculate and store clustering coefficients
+
 `clusteringPlot(network, theme_bw = FALSE)` #
