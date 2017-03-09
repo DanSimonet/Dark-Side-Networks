@@ -75,6 +75,6 @@ sd <- c(0.486, 0.482, 0.482, 0.344, 0.489, 0.452, 0.485, 0.269, 0.396, 0.491, 0.
 ###Simulate HDS Dataset###
 
 library(bindata)
-HDS.Sim <- rmvbin(5e10, margprob = p, bincorr = HDS.cor)
+HDS.Sim <- rmvbin(5^10, margprob = p, bincorr = HDS.cor)
 
 ```
