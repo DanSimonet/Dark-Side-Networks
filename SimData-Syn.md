@@ -75,7 +75,7 @@ sd <- c(0.486, 0.482, 0.482, 0.344, 0.489, 0.452, 0.485, 0.269, 0.396, 0.491, 0.
 ###Simulate HDS Dataset###
 
 library(bindata)
-HDS.Sim <- rmvbin(5^10, margprob = p, bincorr = HDS.cor)
+HDS.Sim <- rmvbin(1000000, margprob = p, bincorr = HDS.cor)
 HDS.Sim <- as.data.frame(HDS.Sim)
 colnames(HDS.Sim) <- c("bol1", "bol2", "bol3", "bol4", "bol5", "bol6", "bol7", "bol8", "bol9", "bol10", "bol11", "bol12", "bol13", "bol14", 
                        "mis1", "mis2", "mis3", "mis4", "mis5", "mis6", "mis7", "mis8", "mis9", "mis10", "mis11", "mis12", "mis13", "mis14", 
