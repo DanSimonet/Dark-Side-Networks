@@ -86,4 +86,4 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 
 `cluster <- clustcoef_auto(network)` #Calculate and store clustering coefficients
 
-`clusteringPlot(network, theme_bw = FALSE)` #
+`clusteringPlot(network, theme_bw = FALSE)` #Visualize multiple clustering coefficients
