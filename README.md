@@ -24,7 +24,7 @@ install.packages("parcor")
 
 ## References
 
-The inspiration, theory, and code for the following project comes from the highly active [Psychosystems](http://psychosystems.org/) group. Notable citations and references with regard to personality and psychopathology constructs as networks of mutually reinforcing behaviors include:
+The inspiration, theory, and code for the following project comes from the highly active [Psychosystems](http://psychosystems.org/) group. Notable citations and and methodological tutorials with regard to personality and psychopathology constructs as networks of mutually reinforcing behaviors include:
 
 - [Borsboom, D., & Cramer, A. O. (2013). Network analysis: an integrative approach to the structure of psychopathology. Annual review of clinical psychology, 9, 91-121.](https://www.ncbi.nlm.nih.gov/pubmed/23537483)
 
