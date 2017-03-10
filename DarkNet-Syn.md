@@ -10,8 +10,8 @@ For illustration purposes, code is illustrated using the *pearson* correlation m
 
 ```Rouge
 library(psych)
-HDS.Sim.cor <- cor(HDS.Sim) #Pearson
-HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
+HDS.Sim.cor <- cor(SimData.HDS) #Pearson
+HDS.Sim.tet <- tetrachoric(SimData.HDS) #Tetrachoric
 ```
 
 ### Step 3. Plot correlation and partial correlation networks (figures 2A and 2B).
