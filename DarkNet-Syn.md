@@ -17,7 +17,7 @@ HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 ### Step 3. Plot correlation and partial correlation networks (figures 2A and 2B).
 ------
 ```Rouge
-groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14))
+groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14)) #for coloring nodes by scale
 
 ##Correlation network##
 netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, 
@@ -39,7 +39,7 @@ Estimate the adaptive lasso network (NOTE: qgraph implements a similiar yet slig
 ```Rouge
 set.seed(100)
 adls <- adalasso.net(HDS.Sim) #compute partial correlation matrix via LASSO technique
-network <- as.matrix(forceSymmetric(adls$pcor.adalasso))
+network <- as.matrix(forceSymmetric(adls$pcor.adalasso)) #extract adaptive LASSO matrix
 colnames(network) <- rownames(network) <- colnames(HDS.Sim)
 ```
 
