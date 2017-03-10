@@ -1,5 +1,5 @@
 ## Dark-Side-Networks
-Code and simulated dataset to reproduce analyses for 2017 SIOP Poster on Dark Triad as a causal network.
+R Code and simulated dataset to reproduce analyses for 2017 SIOP Poster on Dark Triad as a causal network.
 
 ## Project and Data Description
 This repository includes instructions, R syntax, and simulated data for the 2017 SIOP poster: "Dark personality as a causal system: A network approach." Note there will be slight variations in node position and centrality due to simulated nature of the dataset; however, a majority of conclusions about global configuration, centrality, and clustering remain the same. The following aspects of the project can be accessed.
