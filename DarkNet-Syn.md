@@ -34,7 +34,7 @@ vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esiz
 
 `library(parcor)`
 
-Estimate the adaptive lasso network[^EBI]  
+Estimate the adaptive lasso network<sup>1</sup>.
 
 ```Rouge
 set.seed(100)
@@ -90,4 +90,4 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 
 ###Notes
 
-[^EBI] qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).)
+<sup>1</sup> qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).)
