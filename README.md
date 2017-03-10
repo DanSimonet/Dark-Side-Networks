@@ -7,7 +7,7 @@ This repository includes instructions, R syntax, and simulated data for the 2017
 - HDS item-level correlations (N = 62,997), descriptive statistics, and code for simulating a multivariate binary-item dataset in the `SimData-Syn.md` file.
 - Simulated dataset of the 42-item Hogan Development Survey analog of the Dark Triad in `SimData.HDS`
 - R syntax for replicating network diagrams and analyses in `DarkNet.Syn`
-- Full submission in `Poster Submission.` Item content is removed to protect propietary key. 
+- Full submission in `Poster Submission.` Item content removed to protect propietary key. 
 
 ## Requirements
 
