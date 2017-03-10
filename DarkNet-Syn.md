@@ -17,7 +17,7 @@ HDS.Sim.tet <- tetrachoric(HDS.Sim) #Tetrachoric
 ### Step 3. Plot correlation and partial correlation networks (figures 2A and 2B).
 ------
 ```Rouge
-groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14)) #for coloring nodes by scale
+groups <- c(rep("Narcissism", 14), rep("Psychoticism", 14), rep("Machievallianism", 14)) #color nodes by scale
 
 ##Correlation network##
 netCor <- qgraph(HDS.Sim.cor, layout = "spring", labels = colnames(HDS.Sim.cor), groups = groups, 
