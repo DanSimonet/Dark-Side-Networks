@@ -34,7 +34,7 @@ vsize = 4, title = "B. Partial Correlation Network", legend = F, cut = .10, esiz
 
 `library(parcor)`
 
-Estimate the adaptive lasso network (NOTE: qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).) 
+Estimate the adaptive lasso network[^EBI]  
 
 ```Rouge
 set.seed(100)
@@ -87,3 +87,7 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 `cluster <- clustcoef_auto(network)` #Calculate and store clustering coefficients
 
 `clusteringPlot(network, theme_bw = FALSE)` #Visualize multiple clustering coefficients
+
+###Notes
+
+[^EBI] qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).)
