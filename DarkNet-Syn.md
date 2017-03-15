@@ -88,6 +88,6 @@ t.test(abs (ew [ew > 0]), abs(ew [ew < 0]), var.equal = TRUE)
 
 `clusteringPlot(network, theme_bw = FALSE)` #Visualize multiple clustering coefficients
 
-###Notes
+### Notes
 
 <sup>1</sup> qgraph implements a similiar yet slightly distinct [EBICglasso function](http://psychosystems.org/forums/topic/ebicglasso-lambda-values/).
