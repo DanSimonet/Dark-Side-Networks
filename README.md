@@ -34,7 +34,7 @@ The inspiration, theory, and code for the following project comes from the highl
 
 ## License
 
-This data and analysis are being prepared for publication and review. The repository is copyrighted and no permission is granted to re-analyse the data for publication or reuse any of the materials. After publication publication code and data will ultimately be GPL-2; all measurement scales retain existing licence;
+This data and analysis are being prepared for publication and review. The repository is copyrighted and no permission is granted to re-analyse the data for publication or reuse any of the materials. After publication, code and data will ultimately be GPL-2; all measurement scales retain existing licence.
     
 Any publication that re-uses the data should cite this publication.
 
