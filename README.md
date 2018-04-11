@@ -24,7 +24,7 @@ install.packages("parcor")
 
 ## References
 
-The inspiration, theory, and code for the following project comes from active applications in personality psychology. The primary work providing the logic, structure, and open source syntax for applying these algorithms comes from the following citation:
+The inspiration, theory, and code for the following project comes from active applications of these techniques by Gabriel Olaru, Oliver Wilhelm, and Ulrich Schroeders in personality psychology. The primary work providing the logic, structure, and open source syntax for applying these algorithms comes from the following citation:
 
 - [Schroeders, U., Wilhelm, O., & Olaru, G. (2016). Meta-heuristics in short scale construction: ant colony optimization and genetic algorithm. PloS one, 11(11), e0167110.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0167110)
 
